@@ -1,0 +1,38 @@
+<h3 style="margin-top: 10px; text-align: center;">Update page</h3>
+<hr>
+<form [formGroup]="form" (ngSubmit)="submit()" class="form" style="margin-top: 10px;">
+    <div class="mb-3">
+        <label for="id" class="form-label">Medicine to update id</label>
+        <input class="form-control" id="id" placeholder="Enter id"
+            type="number" formControlName="id">
+    </div>
+    <hr class="my-4">
+    <div class="mb-3">
+        <label for="name" class="form-label">New name</label>
+        <input class="form-control" id="name" placeholder="Enter new name"
+            type="text" formControlName="name">
+    </div>
+    <div class="mb-3">
+        <label for="brand" class="form-label">New brand</label>
+        <input class="form-control" id="brand" placeholder="Enter new brand"
+            type="text" formControlName="brand">
+    </div>
+    <div class="mb-3">
+        <label for="category" class="form-label">New category</label>
+        <input class="form-control" id="category" placeholder="Enter new category"
+            type="text" formControlName="category">
+    </div>
+    <div class="mb-3">
+        <label for="year" class="form-label">New production year</label>
+        <input class="form-control" id="year" placeholder="Enter new production year"
+            type="number" formControlName="productionYear">
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">New price</label>
+        <input class="form-control" id="price" placeholder="Enter new price"
+            type="number" formControlName="price">
+    </div>
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+</form>
